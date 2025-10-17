@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Youtube screenshot
-// @version      1.2
+// @version      1.3
 // @description  Adds screenshot button to youtube
 // @author       Fungideon
 // @match        http://www.youtube.com/watch?*
@@ -10,8 +10,6 @@
 
 (function() {
     'use strict';
-
-    // Your code here...
 
     function screenshotYoutube() {
         var elements = document.getElementsByTagName('VIDEO');
@@ -99,6 +97,7 @@
         button.style.verticalAlign = 'top';
         button.style.fontSize = '150%';
         button.style.textAlign = 'center';
+        button.style.lineHeight = 1;
         button.className = 'ytp-button';
         button.id = 'ytp-screenshot-button';
 
